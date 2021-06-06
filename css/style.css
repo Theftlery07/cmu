@@ -1,1 +1,8 @@
-*{list-style: none;text-decoration: none;color: black;font-family: 'Courier Prime', monospace;text-align: center;}
+*{list-style: none;text-decoration: none;color: black;font-family: 'Courier Prime', monospace;text-align: center;margin: 0 auto; padding: 0 auto;font-size: 1vw;border: none;z-index: 2;user-select: none;-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none; z-index: 2;text-align: center;}
+ul{display: inline-flex;list-style-type: none;}
+.hero{height: 100vh;}
+a:hover{color:orange;cursor: pointer;}
+#off:hover{opacity:.70;color:red;cursor:default}
+iframe{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+li{margin: 0 2vw 0 2vw}
+header{padding-top:1vw}
