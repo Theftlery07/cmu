@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet"> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title id='100'>Unity WebGL Player | Test fo Oculus Attempt 3</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Building.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body onload="startUp()" onresize="remove()">
+    <script type="text/javascript" src="scripps/code.js"></script>
+    <header>
+      <nav>
+          <ul id='topics'>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shopEmpire2.html">Shop Empire 2</a></li>
+              <li><a href="homeGoing.html">Home Going</a></li>
+              <li><a href="pongier.html">Pong-ier</a></li>
+              <li><a href="paint.html">Paint</a></li>
+              <li><a href="aRedSquare.html">A Red Square</a></li>
+              <li><a href="typing.html">Typing</a></li>
+              <li><a href="spaceFoods.html">Space Foods</a></li>
+              <li><a href="unity.html">Unity</a></li>
+          </ul>
+      </nav>
+  </header>
+  <div class='hero'>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px;"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Test fo Oculus Attempt 3</div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <nav>
+        <ul>
+            <li>Price Connelly</li>
+        </ul>
+    </nav>
+  </footer>
+  </body>
+</html>
