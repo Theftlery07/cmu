@@ -8,7 +8,10 @@ var spacing = 0
 var positionList = []
 var counter = 0
 var speed = 0
+var links=[['index.html','shopEmpire2.html','homeGoing.html','pongier.html','paint.html','aRedSquare.html','typing.html','spaceFoods.html','unity.html','dotsAndBoxes.html','minesweeper.html','triangle.html'],
+['Home','Shop Empire 2','Home Going','Pong-ier','Paint','A Red Square','Typing','Space Foods','Unity','Dots and Boxes','Minesweeper','Triangle']]
 function startUp(){
+    headerMaker()
     speed = Number(document.getElementsByTagName('title')[0].id)
     spacer()
     lister()
@@ -16,6 +19,20 @@ function startUp(){
     wordChooser()
     createWord()
 }
+// Used to make the headers
+function headerMaker(){
+    for(var i=0;i<links[0].length;i++){
+
+        var l = document.createElement("li")
+        var h = document.createElement("A")
+        l.appendChild(h)
+        h.innerHTML = links[1][i]
+        h.href = links[0][i]
+
+        document.getElementById('topics').appendChild(l)
+    }
+}
+// Used to make the headers
 function lister(){
     positionList.length=0
     positionList.length=Math.floor(((document.body.scrollWidth-15)/spacing))
